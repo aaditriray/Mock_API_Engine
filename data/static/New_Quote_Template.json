@@ -1,0 +1,79 @@
+{
+  "action": "CALC",
+  "quotation_id": "QTN-2026-001500",
+  "parent_quotation_id": null,
+  "provider": {
+    "name": "UK Pension Trust Ltd",
+    "fca_registration_number": "123456"
+  },
+  "customer": {
+    "customer_id": "CUST-98765",
+    "name": "Jane Doe",
+    "date_of_birth": "1985-03-22",
+    "national_insurance_number": "CD987654A"
+  },
+  "pension_plan": {
+    "plan_type": "Defined Contribution",
+    "retirement_age": 75,
+    "contributions": [
+      {
+        "source": "Employee",
+        "frequency": "Monthly",
+        "percent_of_salary": 5,
+        "annual_amount_gbp": 3000.0
+      },
+      {
+        "source": "Employer",
+        "frequency": "Monthly",
+        "percent_of_salary": 3,
+        "annual_amount_gbp": 1800.0
+      },
+      {
+        "source": "Employee Additional Voluntary Contribution",
+        "frequency": "Annual",
+        "fixed_amount_gbp": 2000.0
+      }
+    ]
+  },
+  "transfer": {
+    "from_provider": "Legacy Pension Fund",
+    "transfer_value_gbp": 25000.0,
+    "date_of_transfer": "2026-09-01",
+    "drawdown_benefit": {
+      "initial_withdrawal_gbp": 5000.0,
+      "annual_withdrawal_gbp": 7000.0,
+      "projected_fund_value_at_75_gbp": 40000.0
+    },
+    "projected_fund_value_at_75_gbp": 719063.96
+  },
+  "projection": {
+    "basis": "Illustrative gross annual growth; no product charges or inflation adjustment. Tax-free cash is 25% without an allowance cap. Annual pension uses the fixed 5% annuity rate.",
+    "years_to_retirement": 34,
+    "annuity_rate_percent": 5.0,
+    "low_growth": {
+      "annual_growth_rate_percent": 2.0,
+      "projected_fund_value_at_retirement_gbp": 377752.68,
+      "annual_pension_estimate_gbp": 14165.73,
+      "tax_free_lump_sum_gbp": 94438.17,
+      "projected_fund_value_at_75_gbp": 377752.68
+    },
+    "mid_growth": {
+      "annual_growth_rate_percent": 5.0,
+      "projected_fund_value_at_retirement_gbp": 719063.96,
+      "annual_pension_estimate_gbp": 26964.9,
+      "tax_free_lump_sum_gbp": 179765.99,
+      "projected_fund_value_at_75_gbp": 719063.96
+    },
+    "high_growth": {
+      "annual_growth_rate_percent": 8.0,
+      "projected_fund_value_at_retirement_gbp": 1448445.08,
+      "annual_pension_estimate_gbp": 54316.69,
+      "tax_free_lump_sum_gbp": 362111.27,
+      "projected_fund_value_at_75_gbp": 1448445.08
+    }
+  },
+  "disclaimers": [
+    "This quotation is illustrative only.",
+    "Projections are based on FCA standard growth rates and may not reflect actual investment performance."
+  ]
+}
